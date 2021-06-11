@@ -18,7 +18,7 @@ void loop() {
   // put your main code here, to run repeatedly:
 while(Serial.available())                      //If there is anything in the buffer, perform the following actions. 
 { delay(10);                                   //wait for 10 milliseconds.
-  String ch = Serial.readStringUntil(' ');     //Read the data in string format until you encounter the character inside ' ' .
+  String ch = Serial.readStringUntil('#');     //Read the data in string format until you encounter the character inside ' ' .
 
   if(ch=="*forward"){                          //If the string is *forward then make the car go forward until a new voice command is given.
     go_forward();
@@ -26,13 +26,13 @@ while(Serial.available())                      //If there is anything in the buf
   else if(ch=="*backward"){                   //If the string is *backward then make the car go backward until a new voice command is given.
     go_backward();
   }
-  else if(ch=="*left#"){                     //If the string is *left# then turn the car left.[delay(500),rest() can be added for a proper control over the car]
+  else if(ch=="*left"){                     //If the string is *left then turn the car left.[delay(500),rest() can be added for a proper control over the car]
     turn_left();
   }
-  else if(ch=="*right#"){                    //If the string is *right# then turn the car right.[delay(500),rest() can be added for a proper control over the car.
+  else if(ch=="*right"){                    //If the string is *right then turn the car right.[delay(500),rest() can be added for a proper control over the car.
     turn_right();
   }
-if (ch=="*stop#"){                          //If the string is *stop# then stop the car.
+if (ch=="*stop"){                          //If the string is *stop then stop the car.
   rest();
 }
 else {                                      //If the string is not any of the above mentioned commands then remain in rest position.[Mostly happens because of the fault in voice to text conversion]
