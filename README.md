@@ -10,18 +10,18 @@
 <li> Power source
 <br><br>
 <b> Overview </b><br>
-<li>Voice commands<br>
+<li>Voice commands:<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The above mentioned app is used for voice commands. It can be downloaded from the given link.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This app uses the google assistant to convert the speech to text and then transmit to the HC-05 via Bluetooth.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: If the speech is one word, say Bluetooth the transmitted string is *Bluetooth#.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: If the speech is two words, say My phone or Forward 10 the transmitted string is *My phone#, *Forward &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10#.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The application adds an * and # at the beginning and ending respectively.<br>
-<li>Bluetooth controller<br>
+<li>Bluetooth controller:<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This app contains varies modes. In the terminal mode, the command can be typed easily and is transmitted without &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;any alterations.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: If the Command is one word, say Bluetooth the transmitted string is Bluetooth.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: If the Command is two words, say My phone or Forward 10 the transmitted string is My phone, Forward &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The given command is sent without any alterations.<br>
-<li>Working<br>
+<li>Working:<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A predefined command is sent from the phone(control device) to the Bluetooth HC-05 module via bluetooth.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The arduino reads this data from HC-05 module and splits the string accordingly.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This command is executed and the car moves accordingly. If a time delay is included then it is also taken in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;consideration.<br>
