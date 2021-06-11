@@ -7,7 +7,7 @@ Now the HC-05 is ready to connect to the control device(phone) and as mentioned 
 This app converts the voice commands into text format and is sent to the HC-05 module in a specific format.<br>
 So, if the command is say forward,
 The recieved input wil be *forward#, the arduino reads the data from HC-05 in the form of a string until it encounters #.<br>
-The characters before this are stored in the buffer and they are compared with the predefined commands and if matched the corresponding 
+The characters before this are stored in the buffer(*forward) and they are compared with the predefined commands and if matched the corresponding 
 action is taken.<br>So if forward is the command then *forward is read and compared, when the if condition is met the function go_forward() is called.<br>
 As there is no time delay, the motors will be running and the bluetooth can recieve the command while one action is being performed.<br>
 
