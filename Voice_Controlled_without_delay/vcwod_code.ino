@@ -1,3 +1,4 @@
+//[Remove the TX and RX pins while uploading]
 int motor1a=8;      //Declaring motor pins from motor driver circuit.
 int motor1b=9;
 int motor2a=10;
