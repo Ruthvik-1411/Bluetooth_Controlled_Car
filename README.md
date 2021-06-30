@@ -10,7 +10,7 @@
 <li> Power source
 <br><br>
 <b> Overview </b><br>
-<li>Voice commands:<br>
+<li><u>Voice commands</u>:<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The above mentioned app is used for voice commands. It can be downloaded from the given link.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This app uses the google assistant to convert the speech to text and then transmit to the HC-05 via Bluetooth.<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Example: If the speech is one word, say Bluetooth the transmitted string is *Bluetooth#.<br>
